@@ -1,0 +1,19 @@
+﻿<Window x:Class="KinneretRestaurant.Orders"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KinneretRestaurant"
+        mc:Ignorable="d"
+        Title="Orders" Height="489" Width="1129">
+    <Grid  x:Name="grid" Background="#FFECF1F7" Loaded="grid_Loaded">
+        <DataGrid x:Name="dataGridView" Background="#FFF0F0F0" ColumnWidth="*" Margin="7,5,285,10" FontFamily="David" FontSize="14" FontWeight="Medium" ColumnHeaderHeight="24" RowHeight="24" SelectedCellsChanged="dataGridView_SelectedCellsChanged"/>
+        <Grid x:Name="gridSide" Height="438" Margin="0,10,10,0" VerticalAlignment="Top"  HorizontalAlignment="Right" Width="270">
+            <Label x:Name="label1" Content="מוצרי הזמנה" Margin="76,18,67,0" VerticalAlignment="Top" FontFamily="David" FontWeight="Bold" FontSize="23.907" Background="{x:Null}" Foreground="Maroon"/>
+            <Label x:Name="label2" Content="מוצר  |  כמות  |  מחיר" Margin="66,52,61,0" VerticalAlignment="Top" FontFamily="David" FontWeight="Light" FontSize="16.602" Background="{x:Null}" Foreground="DimGray" FontStyle="Italic"/>
+            <Label x:Name="label3" Content="-----------------------------------------" Margin="24,69,22,0" VerticalAlignment="Top" FontFamily="David" FontSize="16.602" Background="{x:Null}" Foreground="DimGray" FontStyle="Italic"/>
+            <Label x:Name="label4" Content="-----------------------------------------" Margin="24,87,0,0" VerticalAlignment="Top" FontFamily="David" FontSize="16.602" Background="{x:Null}" Foreground="Black" FontStyle="Italic"/>
+        </Grid>
+
+    </Grid>
+</Window>

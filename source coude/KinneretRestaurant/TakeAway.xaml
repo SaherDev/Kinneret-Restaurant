@@ -1,0 +1,77 @@
+﻿<Window x:Class="KinneretRestaurant.TakeAway"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KinneretRestaurant"
+        mc:Ignorable="d"
+        Title="TakeAway" Height="646" Width="649">
+    <Grid Background="#FFECF1F7" Loaded="Grid_Loaded">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="136*"/>
+            <RowDefinition Height="69*"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="label_Copy" Content="איסוף עצמי" Margin="232,31,228,0" VerticalAlignment="Top" FontFamily="David" FontWeight="Bold" FontSize="31.876" Background="{x:Null}"/>
+        <Label x:Name="label_Copy10" Content="הזמנה" Margin="0,12,485,0" VerticalAlignment="Top" FontFamily="David" FontWeight="Bold" FontSize="15.938" HorizontalAlignment="Right" Width="59" Height="33">
+            <Label.Background>
+                <ImageBrush/>
+            </Label.Background>
+        </Label>
+        <Label x:Name="lblOrderNumber" Content="מספר" Margin="0,12,544,0" VerticalAlignment="Top" FontFamily="David" FontWeight="Bold" FontSize="15.938" Foreground="Maroon" HorizontalContentAlignment="Right" HorizontalAlignment="Right" Width="78" Height="33">
+            <Label.Background>
+                <ImageBrush/>
+            </Label.Background>
+        </Label>
+        <TextBox x:Name="txtBoxName" HorizontalAlignment="Left" Height="30" Margin="527,113,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.716,0.429" FontSize="15.938" TextAlignment="Right"/>
+        <Label x:Name="label_Copy2" Content="שם" HorizontalAlignment="Left" Margin="579,89,0,0" VerticalAlignment="Top" FontFamily="David" FontWeight="Bold" FontSize="15.937767" Height="24" RenderTransformOrigin="1.012,0.436">
+            <Label.Background>
+                <ImageBrush/>
+            </Label.Background>
+        </Label>
+        <Label x:Name="label_Copy3" Content="סועדים" HorizontalAlignment="Left" Margin="445,89,0,0" VerticalAlignment="Top" FontFamily="David" FontWeight="Bold" FontSize="15.937767" Height="22" RenderTransformOrigin="1.012,0.436" Width="58">
+            <Label.Background>
+                <ImageBrush/>
+            </Label.Background>
+        </Label>
+        <ComboBox x:Name="comboBoxQuantity" HorizontalAlignment="Left" VerticalAlignment="Top" Width="49" RenderTransformOrigin="0.489,0.952" Margin="313,352,0,0" Height="30"/>
+        <Button x:Name="btnCalc" Content="חישוב" HorizontalAlignment="Left" Margin="138,144.172,0,0" VerticalAlignment="Top" Width="89" FontFamily="David" FontSize="15.938" Height="29"  FontWeight="Bold" Grid.Row="1" Click="btnCalc_Click"/>
+        <Button x:Name="btnPay" Content="תשלום" HorizontalAlignment="Left" Margin="19,144.172,0,0" VerticalAlignment="Top" Width="89 " FontFamily="David" FontSize="15.938" Height="29"  FontWeight="Bold" Click="btnPay_Click" Grid.Row="1"/>
+        <Button x:Name="btnDelete"  HorizontalAlignment="Left" Margin="312,296,0,0" VerticalAlignment="Top" Width="49" FontFamily="David" FontSize="15.938" Height="36" FontWeight="Bold" Click="btnDelete_Click" >
+            <Button.Content>
+                <Image Source="assets/erase_delete_remove_wipe_out-512.png"  />
+            </Button.Content>
+        </Button>
+        <Button x:Name="btnLeft"  HorizontalAlignment="Left" Margin="312,244,0,0" VerticalAlignment="Top" Width="49" FontFamily="David" FontSize="15.938" Height="36"  FontWeight="Bold" Click="btnLeft_Click" >
+
+            <Button.Content>
+                <Image Source="assets/3666057.png"  />
+            </Button.Content>
+        </Button>
+        <DataGrid x:Name="dataGridView" Background="#FFF0F0F0"  HorizontalAlignment="Left" Height="243" VerticalAlignment="Top" Width="233" Margin="379,199,0,0" FontFamily="David" FontSize="14" FontWeight="Medium" ColumnWidth="*" ColumnHeaderHeight="24" RowHeight="24" Grid.RowSpan="2"/>
+        <Label x:Name="label_Copy4" Content="מחיר כולל" Margin="0,39.172,384,0" VerticalAlignment="Top" FontFamily="David" FontWeight="Bold" FontSize="15.937767" HorizontalAlignment="Right" Width="82" Grid.Row="1">
+            <Label.Background>
+                <ImageBrush/>
+            </Label.Background>
+        </Label>
+        <Label x:Name="lbltotal" Content="מספר" Margin="0,39.172,466,0" VerticalAlignment="Top" FontFamily="David" FontWeight="Bold" FontSize="15.937767" Foreground="Maroon" HorizontalContentAlignment="Right" HorizontalAlignment="Right" Width="78" Grid.Row="1">
+            <Label.Background>
+                <ImageBrush/>
+            </Label.Background>
+        </Label>
+        <RadioButton x:Name="radioButtonCash" Content="מזומן" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="118,101.172,0,0" FontFamily="David" FontSize="15.937767" FontWeight="Bold" IsChecked="True" Grid.Row="1"/>
+        <RadioButton x:Name="radioButtonCard" Content="אשראי" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="42,101.172,0,0" FontFamily="David" FontSize="15.937767" FontWeight="Bold" Grid.Row="1"/>
+        <Label x:Name="label_Copy5" Content="הזמנה" Margin="0,172,439,0" VerticalAlignment="Top" FontFamily="David" FontWeight="Bold" FontSize="15.937767" HorizontalAlignment="Right" Width="51">
+            <Label.Background>
+                <ImageBrush/>
+            </Label.Background>
+        </Label>
+        <Label x:Name="label_Copy6" Content="תפריט" Margin="0,172,110,0" VerticalAlignment="Top" FontFamily="David" FontWeight="Bold" FontSize="15.937767" HorizontalAlignment="Right" Width="54">
+            <Label.Background>
+                <ImageBrush/>
+            </Label.Background>
+        </Label>
+        <DataGrid x:Name="dataGridView1" Background="#FFF0F0F0" ColumnWidth="*" HorizontalAlignment="Left" Height="243" VerticalAlignment="Top" Width="233" Margin="63,199,0,0" FontFamily="David" FontSize="14" FontWeight="Medium" ColumnHeaderHeight="24" RowHeight="24" Grid.RowSpan="2"/>
+        <TextBox x:Name="textBoxPeople" HorizontalAlignment="Left" Height="30" Margin="417,113,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.716,0.429" FontSize="15.938" TextAlignment="Right"/>
+
+    </Grid>
+</Window>

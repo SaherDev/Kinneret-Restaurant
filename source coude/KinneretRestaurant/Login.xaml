@@ -1,0 +1,27 @@
+﻿<Window x:Class="KinneretRestaurant.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KinneretRestaurant"
+        mc:Ignorable="d"
+        Title="Kinneret Restaurant" Height="365" Width="304">
+    <Grid x:Name="grid" Background="#FFECF1F7">
+        <Image  x:Name="image" HorizontalAlignment="Left" Height="111" Margin="68,12,0,0" VerticalAlignment="Top" Width="140" RenderTransformOrigin="0.294,0.329" Source="assets/large.png"/>
+        <TextBox x:Name="txtBoxUser" HorizontalAlignment="Left" Height="30" Margin="67,161,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="144" RenderTransformOrigin="0.716,0.429" FontSize="14.942"/>
+        <TextBox x:Name="textBoxPassword" HorizontalAlignment="Left" Height="30" Margin="67,221,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="144" RenderTransformOrigin="0.716,0.429" FontSize="15.938"/>
+        <Label x:Name="label" Content="שם משתמש" HorizontalAlignment="Left" Margin="100,138,0,0" VerticalAlignment="Top" FontFamily="David" FontWeight="Bold" FontSize="15.938">
+            <Label.Background>
+                <ImageBrush/>
+            </Label.Background>
+        </Label>
+        <Label x:Name="label_Copy" Content="סיסמה" HorizontalAlignment="Left" Margin="115,200,0,0" VerticalAlignment="Top" FontFamily="David" FontWeight="Bold" FontSize="15.938" Height="23" RenderTransformOrigin="1.012,0.436">
+            <Label.Background>
+                <ImageBrush/>
+            </Label.Background>
+        </Label>
+        <Button x:Name="button" Content="כניסה" HorizontalAlignment="Left" Margin="67,280,0,0" VerticalAlignment="Top" Width="144" FontFamily="David" FontSize="15.938" Height="29" Click="btnLogin_Click" FontWeight="Bold">
+
+        </Button>
+    </Grid>
+</Window>

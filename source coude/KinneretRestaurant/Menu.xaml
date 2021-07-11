@@ -1,0 +1,12 @@
+﻿<Window x:Class="KinneretRestaurant.Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KinneretRestaurant"
+        mc:Ignorable="d"
+        Title="Menu" Height="475" Width="416">
+    <Grid x:Name="grid" Background="#FFECF1F7" Loaded="grid_Loaded">
+        <DataGrid x:Name="dataGridView" Background="#FFF0F0F0" ColumnWidth="*" Margin="10" FontFamily="David" FontSize="14" FontWeight="Medium" ColumnHeaderHeight="24" RowHeight="24"/>
+    </Grid>
+</Window>
